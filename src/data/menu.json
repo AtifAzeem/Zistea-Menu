@@ -1,0 +1,2536 @@
+{
+  "categories": [
+    {
+      "name": "Cold Coffee",
+      "items": [
+        {
+          "id": "CCF001",
+          "name": "Classic Brew",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CCF002",
+          "name": "Chocolate Frappe",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CCF003",
+          "name": "Vanilla Bliss",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CCF004",
+          "name": "Caramel Craze",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CCF005",
+          "name": "Butter Scotch Cup",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CCF006",
+          "name": "Hazelnut Bliss",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Milk Shakes",
+      "items": [
+        {
+          "id": "MSK001",
+          "name": "Banana Velvet Shake",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK002",
+          "name": "Vanilla Cloud Bliss",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK003",
+          "name": "Mango Majesty",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK004",
+          "name": "Butter Scotch Gold",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK005",
+          "name": "Strawberry Velvet Shake",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK006",
+          "name": "Black Current Crush",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK007",
+          "name": "Dark Oreo Delight",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK008",
+          "name": "Dark Chocolate Shake",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK009",
+          "name": "Crushed Kit-Kat Shake",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK010",
+          "name": "Bubble Gum Bloom",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MSK011",
+          "name": "Raseeli Rasmalai Shake",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 139
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Chai",
+      "items": [
+        {
+          "id": "CHA001",
+          "name": "Adrak Attack",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 25 },
+            { "id": "large", "name": "Large", "price": 45 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA002",
+          "name": "Masala-e-Magic",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 25 },
+            { "id": "large", "name": "Large", "price": 45 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA003",
+          "name": "Cardamom Classic",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 25 },
+            { "id": "large", "name": "Large", "price": 45 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA004",
+          "name": "Bambaiya Cutting",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 25 },
+            { "id": "large", "name": "Large", "price": 45 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA005",
+          "name": "Choco Fusion",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA006",
+          "name": "Butter Scotch Bliss",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA007",
+          "name": "Vanilla Vibes",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA008",
+          "name": "Caramel Kiss",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA009",
+          "name": "Irani Ishq",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA010",
+          "name": "Royal Almond",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA011",
+          "name": "Strawberry Charm",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA012",
+          "name": "Pistachio Pleasure",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA013",
+          "name": "Saffron Royale",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHA014",
+          "name": "Strong Green Tea",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Hot Coffee",
+      "items": [
+        {
+          "id": "HCF001",
+          "name": "Black Kick",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 30 },
+            { "id": "large", "name": "Large", "price": 50 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF002",
+          "name": "Desi Brew",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 35 },
+            { "id": "large", "name": "Large", "price": 55 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF003",
+          "name": "Creamy Butter",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF004",
+          "name": "Almond Shot",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF005",
+          "name": "Caramel Craze",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF006",
+          "name": "Choco Lava",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF007",
+          "name": "Vanilla Bliss",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF008",
+          "name": "Mocha Madness",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 40 },
+            { "id": "large", "name": "Large", "price": 60 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF009",
+          "name": "Butter Scotch Cup",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 45 },
+            { "id": "large", "name": "Large", "price": 65 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "HCF010",
+          "name": "Hazelnut Bliss",
+          "variants": [
+            { "id": "small", "name": "Small", "price": 45 },
+            { "id": "large", "name": "Large", "price": 65 }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Momo",
+      "items": [
+        {
+          "id": "MOM001",
+          "name": "Veg Fried Momo (10 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MOM002",
+          "name": "Kurkure Momo (10 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MOM003",
+          "name": "Cheesy Corn (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 199
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Gravy Momo",
+      "items": [
+        {
+          "id": "GRM001",
+          "name": "Desi Chatni Momo (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "GRM002",
+          "name": "Spicy Schezwan Momo (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "GRM003",
+          "name": "Pizza Tangy Tomato (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 139
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "GRM004",
+          "name": "Tandoori Momo (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 139
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "GRM005",
+          "name": "Masala Makhni Momo (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 139
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "GRM006",
+          "name": "Creamy Momo (8 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 159
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Spring Roll",
+      "items": [
+        {
+          "id": "SPR001",
+          "name": "Spring Roll (2 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SPR002",
+          "name": "Kurkure Spring Roll (2 pcs.)",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Pizza",
+      "items": [
+        {
+          "id": "PIZ001",
+          "name": "Classic Margherita Magic",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ002",
+          "name": "Onion O' Clock",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ003",
+          "name": "Capsi Crunch",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ004",
+          "name": "Tomato Tangy Treat",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ005",
+          "name": "Corny Affair",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 139
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ006",
+          "name": "Fresh Veggie Delight",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 149
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ007",
+          "name": "Fresh Veggie Schezwan Blast",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 159
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ008",
+          "name": "Paneer-e-Zaika",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 169
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ009",
+          "name": "Zaika-e-Tandoori Paneer",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 179
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PIZ010",
+          "name": "Paneer Masala Makhni Pizza",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 179
+            }
+          ],
+          "description": "Rs. 30 Extra For Extra Cheese",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Pasta",
+      "items": [
+        {
+          "id": "PAS001",
+          "name": "Desi Masala-e-Magic",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS002",
+          "name": "Red Hot Waves",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS003",
+          "name": "Zaika-e-Schezwan",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS004",
+          "name": "Tangy Tomato Pasta",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS005",
+          "name": "Pretty Pink Pasta",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS006",
+          "name": "Smoky Tandoori Waves",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS007",
+          "name": "Masala-e-Makhni",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "PAS008",
+          "name": "Creamy White Waves",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 149
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Fries",
+      "items": [
+        {
+          "id": "FRI001",
+          "name": "Simple Salted Smiles",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI002",
+          "name": "Peri Peri Punch",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI003",
+          "name": "Chilli Garlic Chatkare",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI004",
+          "name": "Lemon Chilli Attack",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI005",
+          "name": "Extra Spicy Chilli Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI006",
+          "name": "Korean Kimchi Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI007",
+          "name": "Mayo Garlic Chilli Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI008",
+          "name": "Tandoori Crisp",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI009",
+          "name": "Spicy Schezwan Shots",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI010",
+          "name": "Cheesy Corn Mayo Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI011",
+          "name": "Cheesy Overloaded",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI012",
+          "name": "Pizza Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRI013",
+          "name": "Masala Makhni Fries",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Burger",
+      "items": [
+        {
+          "id": "BUR001",
+          "name": "Aloo Tikki Bites",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 59
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR002",
+          "name": "Double Decor Aloo Bites",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR003",
+          "name": "Cheesy Aloo Tikki Bites",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR004",
+          "name": "Schezwan Blast",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR005",
+          "name": "Spicy Tandoori Bites",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR006",
+          "name": "Masala Makhni Burger",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR007",
+          "name": "Chilli Garlic Burger",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR008",
+          "name": "Paneer Delight",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR009",
+          "name": "Cheesy Paneer Delight",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BUR010",
+          "name": "Zistea Special",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "White Cheese + Spices",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": true,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Sandwich",
+      "items": [
+        {
+          "id": "SAN001",
+          "name": "Crispy Aloo Crushed",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN002",
+          "name": "Savory Onion Zing",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN003",
+          "name": "Sweet Corn Mayo Melt",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN004",
+          "name": "Veggies Delight Fusion",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN005",
+          "name": "Paneer Supreme Grilled",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN006",
+          "name": "Tandoori Paneer Sandwich",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN007",
+          "name": "Veggie Cheese Bomb",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SAN008",
+          "name": "Zistea Overloaded Sandwich",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": true,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Quick Bites",
+      "items": [
+        {
+          "id": "QBT001",
+          "name": "Bun Maska",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 39
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT002",
+          "name": "Chocolate Bun",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 59
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT003",
+          "name": "Bread Butter Toast",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT004",
+          "name": "Sweet Corn",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT005",
+          "name": "Sweet Corn Chat",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT006",
+          "name": "Nachos with Cheese Dip",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT007",
+          "name": "Veggies Nachos Chat",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "QBT008",
+          "name": "Bambaiya Bhelpuri",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "items": [
+        {
+          "id": "BEV001",
+          "name": "Mint Mirage",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV002",
+          "name": "Blue Lagoon Splash",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV003",
+          "name": "Red Blush Melon",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV004",
+          "name": "Midnight Khatta",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV005",
+          "name": "Blue Berry Bloom",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV006",
+          "name": "Cren Crimson Chill",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "BEV007",
+          "name": "Berry Eclipse",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "DRK001",
+          "name": "Cold Drink",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 29
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "DRK002",
+          "name": "Masala Cold Drink",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 49
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "DRK003",
+          "name": "Hell Energy",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "With Ice Cubes",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "DRK004",
+          "name": "Water",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 0
+            }
+          ],
+          "description": "Price as per M.R.P.",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Chilli Potato",
+      "items": [
+        {
+          "id": "CHP001",
+          "name": "Chilli Potato",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "CHP002",
+          "name": "Honey Chilli Potato",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Fried Rice",
+      "items": [
+        {
+          "id": "FRC001",
+          "name": "Veg Fried Rice",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRC002",
+          "name": "Spicy Schezwan Rice",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "FRC003",
+          "name": "Paneer Fried Rice",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Noodles",
+      "items": [
+        {
+          "id": "NDL001",
+          "name": "Veg Noodle",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "NDL002",
+          "name": "Paneer Veg Noodle",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 99
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "NDL003",
+          "name": "Korean Ramen Noodle",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "Extra Spicy",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Soup",
+      "items": [
+        {
+          "id": "SUP001",
+          "name": "Tangy Tomato Soup",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SUP002",
+          "name": "Hot Chilli Soup",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "SUP003",
+          "name": "Creamy Corn Soup",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Wraps",
+      "items": [
+        {
+          "id": "WRP001",
+          "name": "Classic Aloo Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "WRP002",
+          "name": "Cheesy Aloo Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "WRP003",
+          "name": "Paneer Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "WRP004",
+          "name": "Cheesy Paneer Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "WRP005",
+          "name": "Veggies Loaded Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 109
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "WRP006",
+          "name": "Cheesy Veggies Loaded Roll-up",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 129
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "name": "Maggie",
+      "items": [
+        {
+          "id": "MAG001",
+          "name": "Classic Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 59
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG002",
+          "name": "Double Masala Delight",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 69
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG003",
+          "name": "Veg Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG004",
+          "name": "Corny Twist",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG005",
+          "name": "Spicy Schezwan Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 79
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG006",
+          "name": "Buttery Tales",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG007",
+          "name": "Paneer-e-Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 89
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG008",
+          "name": "Punjabi Cheese Butter Tadka",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG009",
+          "name": "Masala Makhni Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        },
+        {
+          "id": "MAG010",
+          "name": "Smoky Tandoori Maggie",
+          "variants": [
+            {
+              "id": "standard",
+              "name": "Standard",
+              "price": 119
+            }
+          ],
+          "description": "",
+          "image": "",
+          "veg": true,
+          "available": true,
+          "recommended": false,
+          "popular": false
+        }
+      ]
+    }
+  ]
+}
