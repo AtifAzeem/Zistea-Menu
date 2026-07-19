@@ -1,15 +1,3 @@
-// import { createContext } from "react";
-
-// export const CartContext = createContext();
-
-// export function CartProvider({ children }) {
-//   return (
-//     <CartContext.Provider value={{}}>
-//       {children}
-//     </CartContext.Provider>
-//   );
-// }
-
 import { createContext, useContext, useMemo, useState } from "react";
 
 const CartContext = createContext();
@@ -81,22 +69,26 @@ export function CartProvider({ children }) {
     );
   }, [cartItems]);
 
+  // // Delivery Charge
+  // const deliveryCharge = 0;
+
+  // // Grand Total
+  // const grandTotal = useMemo(() => {
+  //   return subtotal + deliveryCharge;
+  // }, [subtotal]);
+  const serviceCharge = 0;
+
+  // Grand Total
+  const grandTotal = useMemo(() => {
+    return subtotal + serviceCharge;
+  }, [subtotal]);
+
   // Get quantity of a specific item
   const getItemQuantity = (id) => {
     const item = cartItems.find((item) => item.id === id);
     return item ? item.quantity : 0;
   };
 
-  // const value = {
-  //   cartItems,
-  //   addToCart,
-  //   increaseQuantity,
-  //   decreaseQuantity,
-  //   removeItem,
-  //   clearCart,
-  //   totalItems,
-  //   subtotal,
-  // };
   const value = {
     cartItems,
     addToCart,
@@ -106,6 +98,8 @@ export function CartProvider({ children }) {
     clearCart,
     totalItems,
     subtotal,
+    serviceCharge,
+    grandTotal,
     getItemQuantity,
   };
 
