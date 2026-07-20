@@ -23,8 +23,6 @@
 
 import { Routes, Route } from "react-router-dom";
 import CartBar from "./components/CartBar";
-
-import Splash from "./pages/Splash";
 import Home from "./pages/Home";
 import FoodDetails from "./pages/FoodDetails";
 import Search from "./pages/Search";
@@ -41,7 +39,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes> */}
       <Routes>
-        <Route path="/" element={<Splash />} />
+        <Route path="/" element={<Home />} />
 
         <Route path="/home" element={<Home />} />
 

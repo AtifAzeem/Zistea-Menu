@@ -34,7 +34,7 @@
 
 import { QRCodeSVG } from "qrcode.react";
 
-function QRModal({ payload, onClose }) {
+function QRModal({ payload, onDone }) {
   return (
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
       <div className="bg-white rounded-xl p-6 text-center">
@@ -48,10 +48,10 @@ function QRModal({ payload, onClose }) {
         />
 
         <button
-          onClick={onClose}
+          onClick={onDone}
           className="mt-6 bg-green-600 text-white px-6 py-2 rounded"
         >
-          Done
+          I've shown this to the waiter
         </button>
       </div>
     </div>

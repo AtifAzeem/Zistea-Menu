@@ -41,11 +41,14 @@ import { useTable } from "../context/TableContext";
 import { useState } from "react";
 import { createOrderPayload } from "../utils/orderPayload";
 import QRModal from "../components/QRModal";
+import ConfirmResetModal from "../components/ConfirmResetModal";
 
 function Cart() {
   const { cartItems } = useCart();
   const { tableNumber } = useTable();
+  // const [showQR, setShowQR] = useState(false);
   const [showQR, setShowQR] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const payload = createOrderPayload(
       tableNumber,
@@ -68,10 +71,20 @@ function Cart() {
           {showQR && (
             <QRModal
               payload={payload}
-              onClose={() => setShowQR(false)}
+              onDone={() => {
+                  setShowQR(false);
+                  setShowConfirmation(true);
+              }}
             />
           )}
-
+          {showConfirmation && (
+              <ConfirmResetModal
+                  onCancel={() => {
+                      setShowConfirmation(false);
+                      setShowQR(true);
+                  }}
+              />
+          )}
       </div>
   </Layout>
   );

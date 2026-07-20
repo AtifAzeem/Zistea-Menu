@@ -98,15 +98,32 @@ import MenuContainer from "../components/MenuContainer";
 import { useTable } from "../context/TableContext";
 
 import menu from "../data/menu.json";
+import LoadingOverlay from "../components/LoadingOverlay";
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState(
     menu.categories[0]
   );
-
+  const [loading, setLoading] = useState(() => {
+    return !sessionStorage.getItem("zisteaIntroSeen");
+  });
   const { tableNumber, setTableNumber } = useTable();
+
+  useEffect(() => {
+    if (!loading) return;
+
+    const timer = setTimeout(() => {
+      sessionStorage.setItem("zisteaIntroSeen", "true");
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, [loading]);
+
   return (
     <Layout>
+      <LoadingOverlay show={loading} />
+
       <RestaurantHeader />
 
       <StickyMenuHeader
