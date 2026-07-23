@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-* {
+@layer base { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,8 +26,9 @@ button {
   cursor: pointer;
 }
 
-/* Hide scrollbar */
+  /* Hide scrollbar */
 
+/*
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
@@ -35,4 +36,45 @@ button {
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Outfit", sans-serif;
+    background: #FFFDF8;
+    color: #222;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Hide scrollbar */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

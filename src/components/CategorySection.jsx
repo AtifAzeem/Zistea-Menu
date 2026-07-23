@@ -67,11 +67,28 @@
 
 // export default CategorySection;
 
+// import FoodCard from "./FoodCard";
+
+// function CategorySection({ items }) {
+//   return (
+//     <div className="space-y-2">
+//       {items.map((item) => (
+//         <FoodCard
+//           key={item.id}
+//           item={item}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default CategorySection;
+
 import FoodCard from "./FoodCard";
 
 function CategorySection({ items }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-1.5">
       {items.map((item) => (
         <FoodCard
           key={item.id}

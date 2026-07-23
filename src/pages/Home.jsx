@@ -88,26 +88,98 @@
 
 // export default Home;
 
+// import { useEffect, useState } from "react";
+
+// import Layout from "../components/Layout";
+// import RestaurantHeader from "../components/RestaurantHeader";
+// import StickyMenuHeader from "../components/StickyMenuHeader";
+// import MenuContainer from "../components/MenuContainer";
+
+// import SideDrawer from "../components/SideDrawer";
+// import menu from "../data/menu.json";
+// import LoadingOverlay from "../components/LoadingOverlay";
+// import useMenuSearch from "../hooks/useMenuSearch";
+// function Home() {
+//   const [selectedCategory, setSelectedCategory] = useState(
+//     menu.categories[0]
+//   );
+
+//   // Search state
+//   const [search, setSearch] = useState("");
+
+//   const [loading, setLoading] = useState(() => {
+//     return !sessionStorage.getItem("zisteaIntroSeen");
+//   });
+
+//   const [drawerOpen, setDrawerOpen] = useState(false);
+
+//   useEffect(() => {
+//     if (!loading) return;
+
+//     const timer = setTimeout(() => {
+//       sessionStorage.setItem("zisteaIntroSeen", "true");
+//       setLoading(false);
+//     }, 1200);
+
+//     return () => clearTimeout(timer);
+//   }, [loading]);
+
+//   return (
+//     <Layout>
+//       <LoadingOverlay show={loading} />
+
+//       <RestaurantHeader
+//         onMenuClick={() => setDrawerOpen(true)}
+//       />
+
+//       <SideDrawer
+//         open={drawerOpen}
+//         onClose={() => setDrawerOpen(false)}
+//       />
+
+//       <StickyMenuHeader
+//         categories={menu.categories}
+//         selectedCategory={selectedCategory}
+//         onSelect={setSelectedCategory}
+//         search={search}
+//         setSearch={setSearch}
+//       />
+
+//       <MenuContainer
+//         category={selectedCategory}
+//         search={search}
+//       />
+//     </Layout>
+//   );
+// }
+
+// export default Home;
+
 import { useEffect, useState } from "react";
 
 import Layout from "../components/Layout";
 import RestaurantHeader from "../components/RestaurantHeader";
 import StickyMenuHeader from "../components/StickyMenuHeader";
 import MenuContainer from "../components/MenuContainer";
-
-import { useTable } from "../context/TableContext";
 import SideDrawer from "../components/SideDrawer";
-import menu from "../data/menu.json";
 import LoadingOverlay from "../components/LoadingOverlay";
+
+import menu from "../data/menu.json";
+import useMenuSearch from "../hooks/useMenuSearch";
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState(
     menu.categories[0]
   );
+
+  const [search, setSearch] = useState("");
+
+  const { searching, results } = useMenuSearch(menu, search);
+
   const [loading, setLoading] = useState(() => {
     return !sessionStorage.getItem("zisteaIntroSeen");
   });
-  const { tableNumber, setTableNumber } = useTable();
+
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
@@ -126,20 +198,27 @@ function Home() {
       <LoadingOverlay show={loading} />
 
       <RestaurantHeader
-          onMenuClick={() => setDrawerOpen(true)}
+        onMenuClick={() => setDrawerOpen(true)}
       />
+
       <SideDrawer
-          open={drawerOpen}
-          onClose={() => setDrawerOpen(false)}
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
       />
 
       <StickyMenuHeader
         categories={menu.categories}
         selectedCategory={selectedCategory}
         onSelect={setSelectedCategory}
+        search={search}
+        setSearch={setSearch}
       />
 
-      <MenuContainer category={selectedCategory} />
+      <MenuContainer
+        category={selectedCategory}
+        searching={searching}
+        searchResults={results}
+      />
     </Layout>
   );
 }
