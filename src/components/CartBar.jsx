@@ -76,7 +76,7 @@ function CartBar() {
   const location = useLocation();
   const { totalItems, subtotal } = useCart();
 
-  if (location.pathname === "/" || location.pathname === "/cart") {
+  if (location.pathname === "/cart") {
     return null;
   }
 
