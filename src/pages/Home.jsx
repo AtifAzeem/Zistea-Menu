@@ -96,7 +96,7 @@ import StickyMenuHeader from "../components/StickyMenuHeader";
 import MenuContainer from "../components/MenuContainer";
 
 import { useTable } from "../context/TableContext";
-
+import SideDrawer from "../components/SideDrawer";
 import menu from "../data/menu.json";
 import LoadingOverlay from "../components/LoadingOverlay";
 
@@ -108,6 +108,7 @@ function Home() {
     return !sessionStorage.getItem("zisteaIntroSeen");
   });
   const { tableNumber, setTableNumber } = useTable();
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     if (!loading) return;
@@ -124,7 +125,13 @@ function Home() {
     <Layout>
       <LoadingOverlay show={loading} />
 
-      <RestaurantHeader />
+      <RestaurantHeader
+          onMenuClick={() => setDrawerOpen(true)}
+      />
+      <SideDrawer
+          open={drawerOpen}
+          onClose={() => setDrawerOpen(false)}
+      />
 
       <StickyMenuHeader
         categories={menu.categories}

@@ -1,0 +1,24 @@
+{
+  "name": "ZISTEA",
+  "tagline": "Taste Beyond Time",
+  "description": "Premium Tea • Cafe • Bistro",
+
+  "rating": 4.8,
+
+  "address": {
+    "line1": "117-NM AOne Market",
+    "line2": "Near Quality Points, Kakadeo, Kanpur, Uttar Pradesh",
+    "maps": "https://maps.app.goo.gl/5i7kLq9XzqrdFXYc7?g_st=ac"
+  },
+
+  "contact": {
+    "phone": "8299587094",
+    "instagram": "https://www.instagram.com/zistea__?igsh=MTRvODZsNTQ4M3pzMw==",
+    "whatsapp": "https://whatsapp.com/channel/0029VbBpa6X8V0tqhfX7Qh1p",
+    "feedback": "https://docs.google.com/forms/d/e/1FAIpQLScmwcl3xxfuR8AdJyCF2MZQlaMQYGyabPgNPxSSpHCHya-pIA/viewform?usp=preview"
+  },
+
+  "license": {
+    "fssai": "22726668000022"
+  }
+}
