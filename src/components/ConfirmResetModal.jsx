@@ -19,7 +19,7 @@ function ConfirmResetModal({ onCancel }) {
                 </h2>
 
                 <p className="text-gray-600">
-                    Has the waiter scanned your QR code?
+                    Has the Staff scanned your QR code?
                 </p>
 
                 <div className="mt-8 flex gap-4">

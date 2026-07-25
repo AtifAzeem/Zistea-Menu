@@ -1,160 +1,3 @@
-// // // import Layout from "../components/Layout";
-// // // import RestaurantHeader from "../components/RestaurantHeader";
-// // // import SearchBar from "../components/SearchBar";
-// // // import CategoryBar from "../components/CategoryBar";
-// // // import MenuContainer from "../components/MenuContainer";
-
-// // // function Home() {
-// // //   return (
-// // //     <Layout>
-// // //       <RestaurantHeader />
-// // //       <SearchBar />
-// // //       <CategoryBar />
-// // //       <MenuContainer />
-// // //     </Layout>
-// // //   );
-// // // }
-
-// // // export default Home;
-
-// // import { useState } from "react";
-
-// // import Layout from "../components/Layout";
-// // import RestaurantHeader from "../components/RestaurantHeader";
-// // import SearchBar from "../components/SearchBar";
-// // import CategoryBar from "../components/CategoryBar";
-// // import MenuContainer from "../components/MenuContainer";
-
-// // import menu from "../data/menu.json";
-
-// // function Home() {
-// //   const [selectedCategory, setSelectedCategory] = useState(
-// //     menu.categories[0]
-// //   );
-
-// //   return (
-// //     <Layout>
-// //       <RestaurantHeader />
-// //       <SearchBar />
-
-// //       <CategoryBar
-// //         categories={menu.categories}
-// //         selectedCategory={selectedCategory}
-// //         onSelect={setSelectedCategory}
-// //       />
-
-// //       <MenuContainer
-// //         category={selectedCategory}
-// //       />
-// //     </Layout>
-// //   );
-// // }
-
-// import { useState } from "react";
-
-// import Layout from "../components/Layout";
-// import RestaurantHeader from "../components/RestaurantHeader";
-// import SearchBar from "../components/SearchBar";
-// import CategoryBar from "../components/CategoryBar";
-// import MenuContainer from "../components/MenuContainer";
-// import StickyMenuHeader from "../components/StickyMenuHeader";
-// import menu from "../data/menu.json";
-// import { useTable } from "../context/TableContext";
-
-// function Home() {
-//   const [selectedCategory, setSelectedCategory] = useState(
-//     menu.categories[0]
-//   );
-//   const { tableNumber, setTableNumber } = useTable();
-
-//   return (
-//     <Layout>
-
-//         <RestaurantHeader />
-
-//         <StickyMenuHeader
-//             categories={menu.categories}
-//             selectedCategory={selectedCategory}
-//             onSelect={setSelectedCategory}
-//         />
-
-//         <MenuContainer
-//             category={selectedCategory}
-//         />
-
-//     </Layout>
-//   );
-// }
-
-// export default Home;
-
-// import { useEffect, useState } from "react";
-
-// import Layout from "../components/Layout";
-// import RestaurantHeader from "../components/RestaurantHeader";
-// import StickyMenuHeader from "../components/StickyMenuHeader";
-// import MenuContainer from "../components/MenuContainer";
-
-// import SideDrawer from "../components/SideDrawer";
-// import menu from "../data/menu.json";
-// import LoadingOverlay from "../components/LoadingOverlay";
-// import useMenuSearch from "../hooks/useMenuSearch";
-// function Home() {
-//   const [selectedCategory, setSelectedCategory] = useState(
-//     menu.categories[0]
-//   );
-
-//   // Search state
-//   const [search, setSearch] = useState("");
-
-//   const [loading, setLoading] = useState(() => {
-//     return !sessionStorage.getItem("zisteaIntroSeen");
-//   });
-
-//   const [drawerOpen, setDrawerOpen] = useState(false);
-
-//   useEffect(() => {
-//     if (!loading) return;
-
-//     const timer = setTimeout(() => {
-//       sessionStorage.setItem("zisteaIntroSeen", "true");
-//       setLoading(false);
-//     }, 1200);
-
-//     return () => clearTimeout(timer);
-//   }, [loading]);
-
-//   return (
-//     <Layout>
-//       <LoadingOverlay show={loading} />
-
-//       <RestaurantHeader
-//         onMenuClick={() => setDrawerOpen(true)}
-//       />
-
-//       <SideDrawer
-//         open={drawerOpen}
-//         onClose={() => setDrawerOpen(false)}
-//       />
-
-//       <StickyMenuHeader
-//         categories={menu.categories}
-//         selectedCategory={selectedCategory}
-//         onSelect={setSelectedCategory}
-//         search={search}
-//         setSearch={setSearch}
-//       />
-
-//       <MenuContainer
-//         category={selectedCategory}
-//         search={search}
-//       />
-//     </Layout>
-//   );
-// }
-
-// export default Home;
-
 import { useEffect, useState } from "react";
 
 import Layout from "../components/Layout";
@@ -164,61 +7,66 @@ import MenuContainer from "../components/MenuContainer";
 import SideDrawer from "../components/SideDrawer";
 import LoadingOverlay from "../components/LoadingOverlay";
 
-import menu from "../data/menu.json";
+import { useMenu } from "../context/MenuContext";
 import useMenuSearch from "../hooks/useMenuSearch";
 
 function Home() {
-  const [selectedCategory, setSelectedCategory] = useState(
-    menu.categories[0]
-  );
+  const { menu, loading, error } = useMenu();
 
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [search, setSearch] = useState("");
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const { searching, results } = useMenuSearch(menu, search);
 
-  const [loading, setLoading] = useState(() => {
-    return !sessionStorage.getItem("zisteaIntroSeen");
-  });
-
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
   useEffect(() => {
-    if (!loading) return;
+    if (
+      menu &&
+      menu.categories.length > 0 &&
+      !selectedCategory
+    ) {
+      setSelectedCategory(menu.categories[0]);
+    }
+  }, [menu, selectedCategory]);
 
-    const timer = setTimeout(() => {
-      sessionStorage.setItem("zisteaIntroSeen", "true");
-      setLoading(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, [loading]);
+  if (error) {
+    return (
+      <div className="flex h-screen items-center justify-center">
+        Failed to load menu.
+      </div>
+    );
+  }
 
   return (
     <Layout>
       <LoadingOverlay show={loading} />
 
-      <RestaurantHeader
-        onMenuClick={() => setDrawerOpen(true)}
-      />
+      {!loading && menu && selectedCategory && (
+        <>
+          <RestaurantHeader
+            onMenuClick={() => setDrawerOpen(true)}
+          />
 
-      <SideDrawer
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-      />
+          <SideDrawer
+            open={drawerOpen}
+            onClose={() => setDrawerOpen(false)}
+          />
 
-      <StickyMenuHeader
-        categories={menu.categories}
-        selectedCategory={selectedCategory}
-        onSelect={setSelectedCategory}
-        search={search}
-        setSearch={setSearch}
-      />
+          <StickyMenuHeader
+            categories={menu.categories}
+            selectedCategory={selectedCategory}
+            onSelect={setSelectedCategory}
+            search={search}
+            setSearch={setSearch}
+          />
 
-      <MenuContainer
-        category={selectedCategory}
-        searching={searching}
-        searchResults={results}
-      />
+          <MenuContainer
+            category={selectedCategory}
+            searching={searching}
+            searchResults={results}
+          />
+        </>
+      )}
     </Layout>
   );
 }

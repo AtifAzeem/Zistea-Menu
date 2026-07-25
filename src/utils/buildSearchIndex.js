@@ -8,6 +8,10 @@ export function normalize(text = "") {
     .replace(/\s+/g, " ");
 }
 export function buildSearchIndex(menu) {
+  if (!menu?.categories) {
+    return [];
+  }
+
   const index = [];
 
   for (const category of menu.categories) {
@@ -16,11 +20,8 @@ export function buildSearchIndex(menu) {
     for (const item of category.items) {
       index.push({
         id: item.id,
-
         item,
-
         category: category.name,
-
         searchable: normalize(
           [
             item.name,
