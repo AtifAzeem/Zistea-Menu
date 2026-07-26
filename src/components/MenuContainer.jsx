@@ -5,9 +5,16 @@ function MenuContainer({
   searching,
   searchResults,
 }) {
-  const items = searching
-    ? searchResults.map((result) => result.item)
-    : category.items;
+  const items = (
+    searching
+      ? searchResults.map((result) => result.item)
+      : category.items
+  )
+    .slice()
+    .sort((a, b) => {
+      if (a.available === b.available) return 0;
+      return a.available ? -1 : 1;
+    });
 
   return (
     <div className="px-4 pt-3 pb-6">
