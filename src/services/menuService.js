@@ -55,10 +55,9 @@ export async function getMenu() {
         variantsByItem.get(variant.item_id).push({
             id: variant.id,
             name: variant.name,
-            price: variant.price
+            price: variant.price,
         });
     }
-
     const addonMap = new Map();
 
     for (const addon of addonsRes.data) {
@@ -86,6 +85,9 @@ export async function getMenu() {
             itemsByCategory.set(item.category_id, []);
         }
 
+        const itemVariants = variantsByItem.get(item.id) || [];
+        const itemAddons = addonsByCategory.get(item.category_id) || [];
+
         itemsByCategory.get(item.category_id).push({
 
             id: item.id,
@@ -97,10 +99,12 @@ export async function getMenu() {
             recommended: item.recommended,
             popular: item.popular,
 
-            variants: variantsByItem.get(item.id) || [],
+            variants: itemVariants,
+            addons: itemAddons,
 
-            addons: addonsByCategory.get(item.category_id) || []
-
+            hasVariants: itemVariants.length > 1,
+            hasAddons: itemAddons.length > 0,
+            baseVariant: itemVariants[0] ?? null,
         });
 
     }

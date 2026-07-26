@@ -1,6 +1,5 @@
 import { useCart } from "../context/CartContext";
 import CartItem from "./CartItem";
-
 function CartItemsCard() {
   const { cartItems } = useCart();
 
@@ -10,7 +9,7 @@ function CartItemsCard() {
     <div className="mb-5 overflow-hidden rounded-2xl bg-white shadow-sm">
       {cartItems.map((item, index) => (
         <div
-          key={item.id}
+          key={item.cartId}
           className={
             index !== cartItems.length - 1
               ? "border-b border-gray-200"

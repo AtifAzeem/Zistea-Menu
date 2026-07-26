@@ -11,15 +11,22 @@ function CartItem({ item }) {
           <h3 className="text-lg font-semibold">
             {item.name}
           </h3>
-
+          <p className="mt-1 text-sm text-gray-500">
+              {item.variant.name}
+          </p>
+          {item.addons.length > 0 && (
+            <p className="text-xs text-gray-400">
+                + {item.addons.map(a => a.name).join(", ")}
+            </p>
+          )}
           <p className="mt-3 text-xl font-bold text-amber-700">
-            ₹{item.price * item.quantity}
+            ₹{item.unitPrice * item.quantity}
           </p>
         </div>
 
         <div className="flex items-center gap-3 rounded-lg border border-gray-300 px-3 py-1">
           <button
-            onClick={() => decreaseQuantity(item.id)}
+            onClick={() => decreaseQuantity(item.cartId)}
             className="text-lg font-bold text-green-600"
           >
             −
@@ -30,7 +37,7 @@ function CartItem({ item }) {
           </span>
 
           <button
-            onClick={() => increaseQuantity(item.id)}
+            onClick={() => increaseQuantity(item.cartId)}
             className="text-lg font-bold text-green-600"
           >
             +

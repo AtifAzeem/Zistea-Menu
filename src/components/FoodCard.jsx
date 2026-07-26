@@ -1,19 +1,19 @@
 import { FaLeaf } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
+import { useState } from "react";
+import CustomizeItemModal from "./CustomizeItemModal";
 
 function FoodCard({ item }) {
-  const {
-    addToCart,
-    increaseQuantity,
-    decreaseQuantity,
-    getItemQuantity,
-  } = useCart();
+  const [showCustomizeModal, setShowCustomizeModal] = useState(false);
+  const { cartItems, addToCart, increaseQuantity, decreaseQuantity, getItemQuantity } = useCart();
 
   const quantity = getItemQuantity(item.id);
-  const startingPrice = item.variants[0].price;
+  const startingPrice = item.baseVariant?.price ?? 0;
   const isAvailable = item.available;
+  const isCustomizable = item.hasVariants || item.hasAddons;
 
   return (
+     <>
     <div className="flex gap-4 border-b border-[#EEE8DC] py-4">
       {/* Left */}
 
@@ -108,15 +108,23 @@ function FoodCard({ item }) {
           </div>
         ) : quantity === 0 ? (
           <button
-            onClick={() =>
+            onClick={() => {
+              if (isCustomizable) {
+                setShowCustomizeModal(true);
+                return;
+              }
+
               addToCart({
                 id: item.id,
                 name: item.name,
-                price: startingPrice,
                 image: item.image,
+
+                variant: item.baseVariant,
+                addons: [],
+
                 available: item.available,
-              })
-            }
+              });
+            }}
             className="
               absolute
               bottom-0
@@ -179,10 +187,18 @@ function FoodCard({ item }) {
             "
           >
             <button
-              onClick={() => decreaseQuantity(item.id)}
+              onClick={() => {
+                const cartItem = cartItems.find(
+                  (cart) => cart.id === item.id
+                );
+
+                if (cartItem) {
+                  decreaseQuantity(cartItem.cartId);
+                }
+              }}
               className="flex h-7 w-7 items-center justify-center text-lg font-bold text-[#B88A1A]"
             >
-              −
+              -
             </button>
 
             <span className="text-sm font-semibold">
@@ -190,15 +206,37 @@ function FoodCard({ item }) {
             </span>
 
             <button
-              onClick={() => increaseQuantity(item.id)}
+              onClick={() => {
+                if (isCustomizable) {
+                    setShowCustomizeModal(true);
+                    return;
+                }
+
+                const cartItem = cartItems.find(
+                    (cart) => cart.id === item.id
+                );
+
+                if (cartItem) {
+                    increaseQuantity(cartItem.cartId);
+                }
+            }}
               className="flex h-7 w-7 items-center justify-center text-lg font-bold text-[#B88A1A]"
             >
               +
             </button>
           </div>
+
+
         )}
       </div>
     </div>
+    {showCustomizeModal && (
+      <CustomizeItemModal
+        item={item}
+        onClose={() => setShowCustomizeModal(false)}
+      />
+    )}
+    </>
   );
 }
 
