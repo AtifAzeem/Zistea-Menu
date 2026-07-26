@@ -30,7 +30,18 @@ import TableEntry from "./pages/TableEntry";
 import { useEffect, useState } from "react";
 import { useMenu } from "./context/MenuContext";
 
+import RestoreCartModal from "./components/RestoreCartModal";
+import { useCart } from "./context/CartContext";
+
+import { useNavigate } from "react-router-dom";
+
 function App() {
+  const {
+    hasPendingCart,
+    restoreCart,
+    discardStoredCart,
+  } = useCart();
+  const navigate = useNavigate();
   return (
     <>
       <Routes>
@@ -43,6 +54,16 @@ function App() {
 
         <Route path="/cart" element={<Cart />} />
       </Routes>
+
+      {hasPendingCart && (
+        <RestoreCartModal
+            onRestore={restoreCart}
+            onStartNew={() => {
+                discardStoredCart();
+                navigate("/");
+            }}
+        />
+      )}
 
       <CartBar />
     </>

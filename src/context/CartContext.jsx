@@ -1,9 +1,106 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { useEffect, createContext, useContext, useMemo, useState } from "react";
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
+  const EMPTY_CART = {
+    createdAt: null,
+    updatedAt: null,
+    table: null,
+    items: [],
+  };
+  const CART_EXPIRY_MS = 30 * 60 * 1000;
+
+  const deleteStoredCart = () => {
+      localStorage.removeItem("zisteaCart");
+  };
+
+  const loadCart = () => {
+      const savedCart = localStorage.getItem("zisteaCart");
+
+      if (!savedCart) {
+          return { ...EMPTY_CART };
+      }
+      
+      try {
+          const parsed = JSON.parse(savedCart);
+          const isExpired =
+              parsed.updatedAt &&
+              Date.now() - parsed.updatedAt > CART_EXPIRY_MS;
+          if (isExpired) {
+              deleteStoredCart();
+              return { ...EMPTY_CART };
+          }
+          return {
+              createdAt: parsed.createdAt ?? null,
+              updatedAt: parsed.updatedAt ?? null,
+              table: parsed.table ?? null,
+              items: Array.isArray(parsed.items)
+                  ? parsed.items
+                  : [],
+          };
+      } catch (error) {
+          console.error("Failed to load cart:", error);
+          deleteStoredCart();
+          return { ...EMPTY_CART };
+      }
+  };
+  const saveCart = (cartItems) => {
+      const existingCart = localStorage.getItem("zisteaCart");
+
+      let createdAt = Date.now();
+      let table = null;
+
+      if (existingCart) {
+          try {
+              const parsed = JSON.parse(existingCart);
+
+              createdAt = parsed.createdAt ?? createdAt;
+              table = parsed.table ?? null;
+          } catch {
+              // Ignore corrupted data and create a fresh cart
+          }
+      }
+
+      const cartData = {
+          createdAt,
+          updatedAt: Date.now(),
+          table,
+          items: cartItems,
+      };
+
+      localStorage.setItem(
+          "zisteaCart",
+          JSON.stringify(cartData)
+      );
+  };
+
   const [cartItems, setCartItems] = useState([]);
+  const [pendingCart, setPendingCart] = useState(loadCart);
+
+  const hasPendingCart = pendingCart.items.length > 0;
+
+  // console.log(initialCart);
+  const [restoreDecisionMade, setRestoreDecisionMade] = useState(
+    !hasPendingCart
+  );
+  useEffect(() => {
+    if (!restoreDecisionMade) return;
+
+    saveCart(cartItems);
+  }, [cartItems, restoreDecisionMade]);
+
+  const restoreCart = () => {
+    setCartItems(pendingCart.items);
+    setPendingCart({ ...EMPTY_CART });
+    setRestoreDecisionMade(true);
+  };
+
+  const discardStoredCart = () => {
+    deleteStoredCart();
+    setPendingCart({ ...EMPTY_CART });
+    setRestoreDecisionMade(true);
+  };
 
   const addToCart = (item) => {
     if (!item.available) return;
@@ -102,11 +199,18 @@ export function CartProvider({ children }) {
     decreaseQuantity,
     removeItem,
     clearCart,
+
     totalItems,
     subtotal,
     serviceCharge,
     grandTotal,
     getItemQuantity,
+
+    pendingCart,
+    hasPendingCart,
+    restoreCart,
+    discardStoredCart,
+    deleteStoredCart,
   };
 
   return (

@@ -21,7 +21,7 @@ function Cart() {
       tableNumber,
       cartItems
   );
-  console.log("Payload:", JSON.stringify(payload, null, 2));
+  // console.log("Payload:", JSON.stringify(payload, null, 2));
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen p-4">
