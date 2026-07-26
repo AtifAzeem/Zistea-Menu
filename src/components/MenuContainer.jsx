@@ -1,4 +1,5 @@
 import CategorySection from "./CategorySection";
+import { useCart } from "../context/CartContext";
 
 function MenuContainer({
   category,
@@ -16,8 +17,16 @@ function MenuContainer({
       return a.available ? -1 : 1;
     });
 
+    const { cartItems } = useCart();
+
   return (
-    <div className="px-4 pt-3 pb-6">
+    <div
+      className={`px-4 pt-3 ${
+        cartItems.length > 0 ? "pb-25" : "pb-6"
+      }`}
+    >
+
+
       {/* Header */}
       <div className="mb-4">
         <h2 className="text-2xl font-bold text-gray-900">
