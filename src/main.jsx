@@ -6,18 +6,15 @@ import App from "./App";
 import "./index.css";
 
 import { CartProvider } from "./context/CartContext";
-import { TableProvider } from "./context/TableContext";
 import { MenuProvider } from "./context/MenuContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <MenuProvider>
-        <TableProvider>
-          <CartProvider>
-            <App />
-          </CartProvider>
-        </TableProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
       </MenuProvider>
     </BrowserRouter>
   </React.StrictMode>

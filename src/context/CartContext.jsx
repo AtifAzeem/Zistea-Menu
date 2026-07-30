@@ -45,7 +45,7 @@ export function CartProvider({ children }) {
           return { ...EMPTY_CART };
       }
   };
-  const saveCart = (cartItems) => {
+  const saveCart = (cartItems, tableNumber) => {
       const existingCart = localStorage.getItem("zisteaCart");
 
       let createdAt = Date.now();
@@ -65,7 +65,7 @@ export function CartProvider({ children }) {
       const cartData = {
           createdAt,
           updatedAt: Date.now(),
-          table,
+          table: tableNumber,
           items: cartItems,
       };
 
@@ -75,7 +75,9 @@ export function CartProvider({ children }) {
       );
   };
 
-  const [cartItems, setCartItems] = useState([]);
+  const initialCart = loadCart();
+  const [cartItems, setCartItems] = useState(initialCart.items);
+  const [tableNumber, setTableNumber] = useState(initialCart.table);
   const [pendingCart, setPendingCart] = useState(loadCart);
 
   const hasPendingCart = pendingCart.items.length > 0;
@@ -87,8 +89,8 @@ export function CartProvider({ children }) {
   useEffect(() => {
     if (!restoreDecisionMade) return;
 
-    saveCart(cartItems);
-  }, [cartItems, restoreDecisionMade]);
+      saveCart(cartItems, tableNumber);
+  }, [cartItems, tableNumber, restoreDecisionMade]);
 
   const restoreCart = () => {
     setCartItems(pendingCart.items);
@@ -248,6 +250,8 @@ export function CartProvider({ children }) {
     restoreCart,
     discardStoredCart,
     deleteStoredCart,
+    tableNumber,
+    setTableNumber,
   };
 
   return (

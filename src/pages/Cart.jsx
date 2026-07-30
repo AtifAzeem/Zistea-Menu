@@ -4,15 +4,13 @@ import CartItemsCard from "../components/CartItemsCard";
 import BillCard from "../components/BillCard";
 import GenerateQRButton from "../components/GenerateQRButton";
 import { useCart } from "../context/CartContext";
-import { useTable } from "../context/TableContext";
 import { useState } from "react";
 import { createOrderPayload } from "../utils/orderPayload";
 import QRModal from "../components/QRModal";
 import ConfirmResetModal from "../components/ConfirmResetModal";
 
 function Cart() {
-  const { cartItems } = useCart();
-  const { tableNumber } = useTable();
+  const { cartItems, tableNumber } = useCart();
   // const [showQR, setShowQR] = useState(false);
   const [showQR, setShowQR] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -21,7 +19,7 @@ function Cart() {
       tableNumber,
       cartItems
   );
-  // console.log("Payload:", JSON.stringify(payload, null, 2));
+  console.log("Payload:", JSON.stringify(payload, null, 2));
   return (
     <Layout>
       <div className="bg-gray-50 min-h-screen p-4">

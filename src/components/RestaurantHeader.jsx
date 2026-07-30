@@ -2,11 +2,11 @@ import { FaStar } from "react-icons/fa";
 import { MdTableRestaurant } from "react-icons/md";
 import { HiOutlineBars3 } from "react-icons/hi2";
 
-import { useTable } from "../context/TableContext";
+import { useCart } from "../context/CartContext";
 import restaurant from "../data/restaurant.json";
 
 function RestaurantHeader({ onMenuClick }) {
-  const { tableNumber } = useTable();
+  const { tableNumber } = useCart();
 
   return (
     <header>
