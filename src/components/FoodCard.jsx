@@ -2,6 +2,7 @@ import { FaLeaf } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 import { useState } from "react";
 import CustomizeItemModal from "./CustomizeItemModal";
+import { supabase } from "../lib/supabase";
 
 function FoodCard({ item }) {
   const [showCustomizeModal, setShowCustomizeModal] = useState(false);
@@ -62,8 +63,21 @@ function FoodCard({ item }) {
       {/* Right */}
 
       <div className="relative w-[110px] shrink-0">
-        <img
+          {/* IMAGES CHANGED FROM FRONT-END TO SUPABASE FETCH */}
+        {/* <img
           src={item.image || "/images/placeholder.jpg"}
+          alt={item.name}
+          className={`h-[110px] w-[110px] rounded-2xl object-cover border border-[#EFE7D9] shadow-sm transition-all duration-300 ${
+            !isAvailable ? "grayscale opacity-70" : ""
+          }`}
+        /> */}
+        {/* SUPABASE IMG FETCH CODE */}
+        <img
+          src={
+            supabase.storage
+              .from("menu-images")
+              .getPublicUrl(item.image).data.publicUrl
+          }
           alt={item.name}
           className={`h-[110px] w-[110px] rounded-2xl object-cover border border-[#EFE7D9] shadow-sm transition-all duration-300 ${
             !isAvailable ? "grayscale opacity-70" : ""
