@@ -1,6 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import logo from "../assets/logo.webp";
 
+const preloadLogo = new Image();
+preloadLogo.src = logo;
+
+
+
 function LoadingOverlay({ show }) {
   return (
     <AnimatePresence>
@@ -124,10 +129,12 @@ function LoadingOverlay({ show }) {
             }}
             >
             <img
-                src={logo}
-                alt="Zistea"
-                draggable={false}
-                className="
+              src={logo}
+              alt="Zistea"
+              width={320}
+              height={320}
+              draggable={false}
+              className="
                 w-44
                 sm:w-56
                 md:w-72
@@ -138,7 +145,7 @@ function LoadingOverlay({ show }) {
                 pointer-events-none
 
                 drop-shadow-[0_0_35px_rgba(212,180,106,0.35)]
-                "
+              "
             />
 
             <p
